@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="shortcut icon" href="images/owl.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ajax Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+	<div id='loading'>
+		<div id='spinner'>
+			<div class='circle big-circle'></div>
+			<div class='circle medium-circle'></div>
+			<div class='circle small-circle'></div>
+		</div>
+	</div>
+
+	<div id="container">
+		<div id='owl'>
+			<div class='left eye'></div>
+			<div class='right eye'></div>
+		</div>
+		<div id="branch"></div>
+	</div>
+
+	<div id='form'>
+		<span class='errText'>Fill in the fields below</span>
+		<div class="input-row">
+			<input id='name' type='text' placeholder='Name'></input>
+			<div id='name-status' class='status'></div>
+		</div>	
+		<div class="input-row">
+			<input id='email' type='text' placeholder='Email'></input>
+			<div id='email-status' class='status'></div>
+		</div>
+		<div class="input-row">
+			<input id='phone' type='text' placeholder='Phone'></input>
+			<div id='phone-status' class='status'></div>
+		</div>
+		<div class="input-row">
+			<input id='postcode' type='text' placeholder='Postal Code'></input>
+			<div id='postcode-status' class='status'></div>
+		</div>
+	
+		<div id="submit">SUBMIT</div>
+		<br/>
+
+		<div id="output"> </div>
+	</div>
+
+</body>
+<script src="ajax.js"></script>
+</html>
